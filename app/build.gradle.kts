@@ -62,6 +62,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":common:imageloading"))
     implementation(project(":common:compose"))
     implementation(project(":common:theme:theme"))
     implementation(project(":common:initializers"))

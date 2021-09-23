@@ -26,6 +26,7 @@ Start android project
 
 - Manage StrictMode
 - Timber initialization
+- Coil initialization
 
 ## TODO
 
