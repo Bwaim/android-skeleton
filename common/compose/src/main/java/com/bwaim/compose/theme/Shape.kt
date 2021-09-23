@@ -1,4 +1,4 @@
-package com.bwaim.app.ui.theme
+package com.bwaim.compose.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

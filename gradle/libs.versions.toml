@@ -1,14 +1,21 @@
 [versions]
 activity = "1.4.0-alpha02"
-dagger = "2.38.1"
 compose = "1.1.0-alpha04"
+coroutines = "1.5.2"
+dagger = "2.38.1"
 kotlin = "1.5.30"
+leakcanary = "2.7"
+mockk = "1.12.0"
+test = "1.5.0-alpha01"
 
 [libraries]
 android-gradle = "com.android.tools.build:gradle:7.1.0-alpha11"
 
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
 androidx-core-library = "androidx.core:core-ktx:1.7.0-beta01"
+androidx-startup = "androidx.startup:startup-runtime:1.1.0"
+androidx-test-truth = { module = "androidx.test.ext:truth", version.ref = "test" }
 
 compose-animation = { module = "androidx.compose.animation:animation", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
@@ -22,8 +29,33 @@ compose-ui-util = { module = "androidx.compose.ui:ui-util", version.ref = "compo
 compose-ui-viewbinding = { module = "androidx.compose.ui:ui-viewbinding", version.ref = "compose" }
 compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "compose" }
 
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+
+firebase-crashlytics-gradle = "com.google.firebase:firebase-crashlytics-gradle:2.6.1"
+firebase-crashlytics-library = "com.google.firebase:firebase-crashlytics-ktx:18.2.1"
+firebase-perf-gradle = "com.google.firebase:perf-plugin:1.4.0"
+firebase-perf-library = "com.google.firebase:firebase-perf-ktx:20.0.2"
+
+google-gms = "com.google.gms:google-services:4.3.10"
+
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger" }
 hilt-gradle = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "dagger" }
 hilt-library = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
 
+junit-library = "junit:junit:4.13.2"
+junit-params = "pl.pragmatists:JUnitParams:1.1.1"
+
+kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+
+leakcanary-library = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanary" }
+leakcanary-plumber = { module = "com.squareup.leakcanary:plumber-android", version.ref = "leakcanary" }
+
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockk" }
+mockk-library = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+timber = "com.jakewharton.timber:timber:5.0.1"
