@@ -20,6 +20,9 @@ dependencies {
 
     implementation(libs.androidx.core.library)
     implementation(libs.androidx.startup)
+    implementation(libs.androidx.work.runtime)
+
+    implementation(libs.androidx.hilt.work)
 
     implementation(libs.hilt.library)
     kapt(libs.hilt.compiler)

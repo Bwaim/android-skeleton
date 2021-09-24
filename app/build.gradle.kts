@@ -69,6 +69,8 @@ dependencies {
 
     implementation(libs.androidx.activity.compose)
 
+    implementation(libs.androidx.hilt.work)
+
     implementation(libs.compose.material)
     implementation(libs.compose.ui.tooling.preview)
 
