@@ -18,6 +18,10 @@
             <meta-data
                 android:name="com.bwaim.initializers.TimberInitializer"
                 android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.bwaim.initializers.WorkManagerInitializer"
+                android:value="androidx.startup" />
         </provider>
 
     </application>

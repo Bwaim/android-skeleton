@@ -26,6 +26,7 @@ Start android project
 
 - Manage StrictMode
 - Timber initialization
+- WorkManager initialization
 
 ## TODO
 
