@@ -31,7 +31,7 @@ compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "
 
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 
-firebase-crashlytics-gradle = "com.google.firebase:firebase-crashlytics-gradle:2.6.1"
+firebase-crashlytics-gradle = "com.google.firebase:firebase-crashlytics-gradle:2.7.1"
 firebase-crashlytics-library = "com.google.firebase:firebase-crashlytics-ktx:18.2.1"
 firebase-perf-gradle = "com.google.firebase:perf-plugin:1.4.0"
 firebase-perf-library = "com.google.firebase:firebase-perf-ktx:20.0.2"
