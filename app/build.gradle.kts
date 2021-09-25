@@ -63,8 +63,10 @@ android {
 
 dependencies {
     implementation(project(":common:compose"))
-    implementation(project(":common:theme:theme"))
+    implementation(project(":common:coroutines:coroutines"))
+    implementation(project(":common:coroutines:coroutines-android"))
     implementation(project(":common:initializers"))
+    implementation(project(":common:theme:theme"))
 
     implementation(libs.androidx.activity.compose)
 
