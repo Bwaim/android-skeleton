@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
         val libs = project.extensions
             .getByType<VersionCatalogsExtension>()
             .named("libs") as org.gradle.accessors.dm.LibrariesForLibs
