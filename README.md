@@ -23,10 +23,12 @@ Start android project
 - LeakCanary
 
 ## Initializers
+Coil and WorkManager are depending of the branch you choose
 
 - Manage StrictMode
 - Timber initialization
-- Coil initialization
+- Coil initialization (main and basic+Coil)
+- WorkManager initialization (main and basic+WorkManager)
 
 ## TODO
 
