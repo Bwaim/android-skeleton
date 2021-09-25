@@ -5,6 +5,7 @@
     android:installLocation="auto">
 
     <application
+        android:name=".SkeletonApplication"
         android:allowBackup="true"
         android:autoRevokePermissions="allowed"
         android:icon="@mipmap/ic_launcher"
