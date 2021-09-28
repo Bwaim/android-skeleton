@@ -11,7 +11,7 @@ test = "1.5.0-alpha01"
 work = "2.7.0-beta01"
 
 [libraries]
-android-gradle = "com.android.tools.build:gradle:7.1.0-alpha11"
+android-gradle = "com.android.tools.build:gradle:7.1.0-alpha12"
 
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
