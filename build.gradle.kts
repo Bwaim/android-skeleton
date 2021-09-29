@@ -22,7 +22,7 @@ buildscript {
 }
 
 plugins {
-    id("com.diffplug.spotless") version "5.15.1"
+    id("com.diffplug.spotless") version "5.15.2"
     id("com.github.ben-manes.versions") version "0.39.0"
     id("org.gradle.android.cache-fix") version "2.4.4" apply false
 }
