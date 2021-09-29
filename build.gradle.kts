@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
         val libs = project.extensions
             .getByType<VersionCatalogsExtension>()
             .named("libs") as org.gradle.accessors.dm.LibrariesForLibs
@@ -22,7 +22,7 @@ buildscript {
 }
 
 plugins {
-    id("com.diffplug.spotless") version "5.15.1"
+    id("com.diffplug.spotless") version "5.15.2"
     id("com.github.ben-manes.versions") version "0.39.0"
     id("org.gradle.android.cache-fix") version "2.4.4" apply false
 }
