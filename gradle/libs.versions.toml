@@ -1,12 +1,13 @@
 [versions]
-activity = "1.4.0-alpha02"
+activity = "1.4.0-beta01"
 androidxhilt = "1.0.0"
-compose = "1.1.0-alpha04"
+compose = "1.1.0-alpha05"
 coroutines = "1.5.2"
 dagger = "2.38.1"
-kotlin = "1.5.30"
+kotlin = "1.5.31"
 leakcanary = "2.7"
 mockk = "1.12.0"
+navigation = "2.4.0-alpha10"
 test = "1.5.0-alpha01"
 work = "2.7.0-beta01"
 
@@ -17,7 +18,9 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
 androidx-core-library = "androidx.core:core-ktx:1.7.0-beta01"
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidxhilt" }
+androidx-hilt-navigation-compose = "androidx.hilt:hilt-navigation-compose:1.0.0-alpha03"
 androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "androidxhilt" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
 androidx-startup = "androidx.startup:startup-runtime:1.1.0"
 androidx-test-truth = { module = "androidx.test.ext:truth", version.ref = "test" }
 androidx-work-gcm = { module = "androidx.work:work-gcm", version.ref = "work" }
