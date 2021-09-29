@@ -9,7 +9,7 @@ repositories {
 
 dependencies {
     implementation("com.android.tools.build:gradle:7.1.0-alpha12")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
     implementation(gradleApi())
     implementation(localGroovy())
 }
