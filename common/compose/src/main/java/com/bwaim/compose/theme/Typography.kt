@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.sp
 public class SkeletonTypography internal constructor(
     public val headline1: TextStyle,
     public val title1: TextStyle,
+    public val title2: TextStyle,
     public val button: TextStyle,
 ) {
     public constructor(
@@ -37,6 +38,12 @@ public class SkeletonTypography internal constructor(
             letterSpacing = 0.sp,
             lineHeight = 32.sp
         ),
+        title2: TextStyle = TextStyle(
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            letterSpacing = 0.sp,
+            lineHeight = 28.sp
+        ),
         button: TextStyle = TextStyle(
             fontSize = 17.sp,
             fontWeight = FontWeight.Bold,
@@ -46,16 +53,19 @@ public class SkeletonTypography internal constructor(
     ) : this(
         headline1 = headline1.withDefaultFontFamily(defaultFontFamily),
         title1 = title1.withDefaultFontFamily(defaultFontFamily),
+        title2 = title2.withDefaultFontFamily(defaultFontFamily),
         button = button.withDefaultFontFamily(defaultFontFamily),
     )
 
     public fun copy(
         headline1: TextStyle = this.headline1,
         title1: TextStyle = this.title1,
+        title2: TextStyle = this.title2,
         button: TextStyle = this.button,
     ): SkeletonTypography = SkeletonTypography(
         headline1 = headline1,
         title1 = title1,
+        title2 = title2,
         button = button,
     )
 
@@ -65,6 +75,7 @@ public class SkeletonTypography internal constructor(
 
         if (headline1 != other.headline1) return false
         if (title1 != other.title1) return false
+        if (title2 != other.title2) return false
         if (button != other.button) return false
 
         return true
@@ -73,12 +84,13 @@ public class SkeletonTypography internal constructor(
     override fun hashCode(): Int {
         var result = headline1.hashCode()
         result = 31 * result + title1.hashCode()
+        result = 31 * result + title2.hashCode()
         result = 31 * result + button.hashCode()
         return result
     }
 
     override fun toString(): String {
-        return "Typography(headline1=$headline1, title1=$title1, button=$button)"
+        return "Typography(headline1=$headline1, title1=$title1, title2=$title2, button=$button)"
     }
 }
 
@@ -120,6 +132,7 @@ private fun PreviewTypography() {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(text = "Headline1", style = SkeletonTheme.typography.headline1)
                 Text(text = "Title 1", style = SkeletonTheme.typography.title1)
+                Text(text = "Title 2", style = SkeletonTheme.typography.title2)
                 Text(text = "Button", style = SkeletonTheme.typography.button)
             }
         }
