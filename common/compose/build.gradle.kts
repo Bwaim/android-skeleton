@@ -21,5 +21,7 @@ dependencies {
     implementation(libs.compose.material)
     implementation(libs.compose.ui.tooling.preview)
 
+    implementation(libs.accompanist.insets.library)
+
     implementation(libs.timber)
 }
