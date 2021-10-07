@@ -24,8 +24,6 @@ android {
 dependencies {
     implementation(project(":common:compose"))
 
-    implementation(project(":navigation"))
-
     implementation(libs.compose.material)
     implementation(libs.compose.ui.tooling.preview)
 

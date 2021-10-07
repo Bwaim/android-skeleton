@@ -8,7 +8,7 @@ kotlin = "1.5.31"
 leakcanary = "2.7"
 mockk = "1.12.0"
 navigation = "2.4.0-alpha10"
-test = "1.5.0-alpha02"
+test = "1.5.0-alpha03"
 
 [libraries]
 accompanist-flowlayout = { module = "com.google.accompanist:accompanist-flowlayout", version.ref = "accompanist" }
@@ -22,7 +22,7 @@ accompanist-placeholder = { module = "com.google.accompanist:accompanist-placeho
 accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanist" }
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
 
-android-gradle = "com.android.tools.build:gradle:7.1.0-alpha12"
+android-gradle = "com.android.tools.build:gradle:7.1.0-alpha13"
 
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
@@ -47,9 +47,9 @@ compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 
 firebase-crashlytics-gradle = "com.google.firebase:firebase-crashlytics-gradle:2.7.1"
-firebase-crashlytics-library = "com.google.firebase:firebase-crashlytics-ktx:18.2.1"
+firebase-crashlytics-library = "com.google.firebase:firebase-crashlytics-ktx:18.2.3"
 firebase-perf-gradle = "com.google.firebase:perf-plugin:1.4.0"
-firebase-perf-library = "com.google.firebase:firebase-perf-ktx:20.0.2"
+firebase-perf-library = "com.google.firebase:firebase-perf-ktx:20.0.3"
 
 google-gms = "com.google.gms:google-services:4.3.10"
 
