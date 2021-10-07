@@ -69,18 +69,19 @@ dependencies {
     implementation(project(":common:http"))
     implementation(project(":common:imageloading"))
     implementation(project(":common:initializers"))
-    implementation(project(":common:navigation"))
     implementation(project(":common:theme:theme"))
 
     implementation(project(":exampleFeature"))
-    implementation(project(":navigation"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
 
+    implementation(libs.compose.animation)
     implementation(libs.compose.material)
     implementation(libs.compose.ui.tooling.preview)
+
+    implementation(libs.accompanist.navigation.animation)
 
     implementation(libs.hilt.library)
     kapt(libs.hilt.compiler)
