@@ -1,18 +1,18 @@
 [versions]
-accompanist = "0.19.0"
-activity = "1.4.0-beta01"
+accompanist = "0.21.4-beta"
+activity = "1.4.0"
 androidxhilt = "1.0.0"
-coil = "1.4.0"
-compose = "1.1.0-alpha05"
-coroutines = "1.5.2"
-dagger = "2.39.1"
-kotlin = "1.5.31"
+coil = "2.0.0-alpha05"
+compose = "1.1.0-beta04"
+coroutines = "1.6.0-RC"
+dagger = "2.40.1"
+kotlin = "1.6.0"
 leakcanary = "2.7"
-mockk = "1.12.0"
-navigation = "2.4.0-alpha10"
-okhttp = "4.9.2"
-test = "1.5.0-alpha03"
-work = "2.7.0-rc01"
+mockk = "1.12.1"
+navigation = "2.4.0-beta02"
+okhttp = "5.0.0-alpha.3"
+test = "1.5.0-alpha01"
+work = "2.7.1"
 
 [libraries]
 accompanist-flowlayout = { module = "com.google.accompanist:accompanist-flowlayout", version.ref = "accompanist" }
@@ -26,13 +26,13 @@ accompanist-placeholder = { module = "com.google.accompanist:accompanist-placeho
 accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanist" }
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
 
-android-gradle = "com.android.tools.build:gradle:7.1.0-alpha13"
+android-gradle = "com.android.tools.build:gradle:7.2.0-alpha03"
 
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
-androidx-core-library = "androidx.core:core-ktx:1.7.0-beta02"
+androidx-core-library = "androidx.core:core-ktx:1.8.0-alpha01"
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidxhilt" }
-androidx-hilt-navigation-compose = "androidx.hilt:hilt-navigation-compose:1.0.0-alpha03"
+androidx-hilt-navigation-compose = "androidx.hilt:hilt-navigation-compose:1.0.0-beta01"
 androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "androidxhilt" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
 androidx-startup = "androidx.startup:startup-runtime:1.1.0"
@@ -63,10 +63,10 @@ compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "
 
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 
-firebase-crashlytics-gradle = "com.google.firebase:firebase-crashlytics-gradle:2.7.1"
-firebase-crashlytics-library = "com.google.firebase:firebase-crashlytics-ktx:18.2.3"
+firebase-crashlytics-gradle = "com.google.firebase:firebase-crashlytics-gradle:2.8.1"
+firebase-crashlytics-library = "com.google.firebase:firebase-crashlytics-ktx:18.2.5"
 firebase-perf-gradle = "com.google.firebase:perf-plugin:1.4.0"
-firebase-perf-library = "com.google.firebase:firebase-perf-ktx:20.0.3"
+firebase-perf-library = "com.google.firebase:firebase-perf-ktx:20.0.4"
 
 google-gms = "com.google.gms:google-services:4.3.10"
 

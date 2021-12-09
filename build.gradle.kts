@@ -7,11 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
-        val libs = project.extensions
-            .getByType<VersionCatalogsExtension>()
-            .named("libs") as org.gradle.accessors.dm.LibrariesForLibs
-
+        classpath(libs.kotlin.gradle)
         classpath(libs.android.gradle)
         classpath(libs.kotlin.gradle)
         classpath(libs.google.gms)
@@ -22,9 +18,9 @@ buildscript {
 }
 
 plugins {
-    id("com.diffplug.spotless") version "5.16.0"
+    id("com.diffplug.spotless") version "6.0.4"
     id("com.github.ben-manes.versions") version "0.39.0"
-    id("org.gradle.android.cache-fix") version "2.4.4" apply false
+    id("org.gradle.android.cache-fix") version "2.4.5" apply false
 }
 
 allprojects {
@@ -39,7 +35,7 @@ subprojects {
     configure<com.diffplug.gradle.spotless.SpotlessExtension> {
         kotlin {
             target("**/*.kt")
-            ktlint("0.42.1")
+            ktlint("0.43.2")
             trimTrailingWhitespace()
             indentWithSpaces()
             endWithNewline()
@@ -67,7 +63,8 @@ subprojects {
     tasks.withType<KotlinCompile> {
         kotlinOptions.run {
             jvmTarget = "1.8"
-            freeCompilerArgs = freeCompilerArgs + "-Xexplicit-api=strict"
+            freeCompilerArgs =
+                freeCompilerArgs + "-Xexplicit-api=strict" + "-Xjvm-default=all" + "-opt-in=kotlin.RequiresOptIn"
         }
     }
 

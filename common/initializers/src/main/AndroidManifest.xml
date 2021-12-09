@@ -12,10 +12,6 @@
             tools:node="merge">
 
             <meta-data
-                android:name="com.bwaim.initializers.CoilInitializer"
-                android:value="androidx.startup" />
-
-            <meta-data
                 android:name="com.bwaim.initializers.StrictModeInitializer"
                 android:value="androidx.startup" />
 
