@@ -27,6 +27,4 @@ dependencies {
     implementation(libs.firebase.crashlytics.library)
 
     implementation(libs.timber)
-
-    implementation(libs.coil.library)
 }

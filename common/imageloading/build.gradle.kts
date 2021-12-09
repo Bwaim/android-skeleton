@@ -14,6 +14,10 @@ android {
 }
 
 dependencies {
+    implementation(project(":common:coroutines:coroutines"))
+
+    implementation(libs.androidx.core.library)
+
     implementation(libs.hilt.library)
     kapt(libs.hilt.compiler)
 
